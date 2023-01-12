@@ -1,0 +1,62 @@
+<mat-toolbar color="primary">
+  <span class="example-spacer"></span>
+</mat-toolbar>
+
+<mat-drawer-container class="example-container" >
+  <mat-drawer mode="side" opened >
+    <ul class="menu-container">
+     <div class="container-button" routerLink="/dashboard">
+      <li>
+        <div class="container-menu-item" >
+          <mat-icon aria-hidden="false" aria-label="Example home icon" color="primary" fontIcon="dashboard"></mat-icon>
+          <div class="item">
+            Dashboard
+          </div>
+        </div>
+      </li>
+     </div>
+
+
+     <div class="container-button" routerLink="/estoque">
+      <li>
+        <div class="container-menu-item" >
+          <mat-icon aria-hidden="false" aria-label="Example home icon" color="primary" fontIcon="inventory"></mat-icon>
+          <div class="item">
+          Estoque
+          </div>
+        </div>
+      </li>
+     </div>
+
+
+
+     <div class="container-button" routerLink="/fornecedor">
+      <li>
+        <div class="container-menu-item" >
+          <mat-icon aria-hidden="false" aria-label="Example home icon" color="primary" fontIcon="group"></mat-icon>
+          <div class="item">
+            Fornecedores
+          </div>
+        </div>
+      </li>
+     </div>
+
+     <div class="container-button" routerLink="/perfil">
+      <li>
+        <div class="container-menu-item" >
+           <mat-icon aria-hidden="false" aria-label="Example home icon" color="primary" fontIcon="person"></mat-icon>
+           <div class="item">
+            Perfil
+           </div>
+        </div>
+       </li>
+     </div>
+    </ul>
+
+  </mat-drawer>
+  <mat-drawer-content>
+    <div class="container-conteudo">
+      <router-outlet></router-outlet>
+    </div>
+  </mat-drawer-content>
+</mat-drawer-container>
